@@ -18,11 +18,14 @@
   <div id="comments">
     <script id="template" type="text/template">
       <img class="pic" src="https://graph.facebook.com/{{userid}}/picture">
-      <span><b>{{name}}</b><br/>{{body}}</span>
+      //<span><b>{{name}}</b><br/>{{body}}</span>
     </script>
-  </div>
-  <div id="textWrap">
-    <textarea id="newComment" rows="3" placeholder="Enter a new comment..." onkeydown="onCommentKeyDown(event)"></textarea>
+    <div id="textWrap">
+      <!--<img class="upic" src="http://placehold.it/100x100">-->
+      <!--img class "upic" src="https://www.googleapis.com/plusDomains/v1/people/107108747005073105284"-->
+      <img class "upic" src="https://www.googleapis.com/plusDomains/v1/people/{{userid}}">
+      <textarea id="newComment" rows="3" placeholder="Enter a new comment..." onkeydown="onCommentKeyDown(event)"></textarea>
+    </div>
   </div>
   <!--<input type='text' id='newComment' placeholder="Enter Comment..." onkeydown="onCommentKeyDown(event)"><br/>-->
 

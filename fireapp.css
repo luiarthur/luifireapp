@@ -20,9 +20,11 @@ body {
   background: #fff;
   min-height: 50px;
 }
-.pic {
+.upic {
   padding-right: 10px;
   float: left;
+  height: 50px;
+  width: 50px;
 }
 #textWrap {
   padding-top: 5px;
@@ -35,3 +37,9 @@ body {
   font-family: Helvetica, sans-serif;
   border: 1px solid #ddd;
 }
+#newComment {
+  width: 85%;
+  float: right;
+  resize: none;
+}
+
