@@ -2,13 +2,14 @@ var myUserID = null;
 var myName = null;
 var myPicture = null;
 var slug = (window.location.href).replace(/\/|\.|:|\[|\]|\#|\$\-/g,"");
-var link = "https://luifireapp.firebaseio.com/comments";
+var link = "https://luifireapp.firebaseio.com/comments/"+slug;
 var ref = new Firebase(link);
 // Store: name, uid, body, picture
 
-//var temp = new Firebase("https://luifireapp.firebaseio.com/comments/test");
-//temp.remove();console.log("yes");
-
+//DANGER! REMOVE ALL COMMENTS!
+//var temp = new Firebase("https://luifireapp.firebaseio.com");
+//temp.auth("SECRET");
+//temp.remove();
 
 function onLoginClick(provider) {
   ref.authWithOAuthPopup(provider,function(){});
@@ -18,7 +19,6 @@ function onLogoutClick() {
 }
 
 ref.onAuth(function(authData) {
-//var login = "<a href='#' onclick='onLoginClick()' id='login'>login</a>";
 var login = "<img id='githubLogin' href='#' onclick='onLoginClick(\"github\")'   src='logos/github.png'>"+
             "<img id='googleLogin' href='#' onclick='onLoginClick(\"google\")'   src='logos/google.png'>"+ 
             "<img id='fbLogin'     href='#' onclick='onLoginClick(\"facebook\")' src='logos/fb.png'>";
