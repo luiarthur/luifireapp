@@ -1,22 +1,15 @@
 body {
   background: #fbfbfb;
   color: #333;
-  font-family: Helvetica, sans-serif;
+  /*font-family: Helvetica, sans-serif;*/
   line-height: 20px;
   width: 420px;
   margin: auto;
 }
-#loginDiv {
-  float: right;
-  margin: 5px 0;
-}
-#video {
-  margin: 5px 0;
-}
 .comment {
   margin: 7px 0;
   padding: 5px;
-  border: 1px solid #ddd;
+  /*border: 1px solid #bbb;*/
   background: #fff;
   min-height: 50px;
 }
@@ -25,16 +18,34 @@ body {
   float: left;
   height: 50px;
   width: 50px;
+  border-radius: 50%;
 }
 #textWrap {
   padding-top: 5px;
   margin-top: 10px;
-  border-top: 1px solid #bbb;
+  border-top: 1px solid #E6E6E6;
 }
-
 #newComment {
   width: 85%;
   float: right;
   resize: none;
+  font-family: sans-serif;
 }
-
+#oComName {
+  color: steelblue;
+}
+#oCom {
+  word-wrap: break-word;
+  font-family: sans-serif;
+}
+#login, #logout {
+  float:right;
+  text-decoration:none;
+  color: grey;
+}
+#googleLogin,#fbLogin,#githubLogin {
+  float:right;
+  height: 20px;
+  width:  20px;
+  padding: 2px;
+}
